@@ -292,6 +292,7 @@ void CMesh::Createbody()
 	AddTriangleVertex(0, 3, 1);
 	AddTriangleVertex(4, 3, 2);
 	AddTriangleVertex(3, 3, 0);
+
 	AddTriangleVertex(4, 3, 2);
 	AddTriangleVertex(7, 3, 3);
 	AddTriangleVertex(6, 2, 0);
