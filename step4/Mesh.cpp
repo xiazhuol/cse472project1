@@ -283,12 +283,12 @@ void CMesh::Createbody()
 	AddTexCoord(glm::vec2(1, 1));
 
 
-	/*AddTriangleVertex(1, 5, 0);
-	AddTriangleVertex(0, 5, 1);
-	AddTriangleVertex(3, 5, 2);
-	AddTriangleVertex(1, 5, 0);
-	AddTriangleVertex(3, 5, 2);
-	AddTriangleVertex(2, 5, 3);*/
+	AddTriangleVertex(0, 5, 0);
+	AddTriangleVertex(3, 5, 1);
+	AddTriangleVertex(1, 5, 2);
+	AddTriangleVertex(3, 5, 0);
+	AddTriangleVertex(1, 5, 2);
+	AddTriangleVertex(2, 5, 3);
 	AddTriangleVertex(2, 0, 0);
 	AddTriangleVertex(3, 0, 1);
 	AddTriangleVertex(7, 0, 2);
@@ -307,12 +307,12 @@ void CMesh::Createbody()
 	AddTriangleVertex(6, 2, 0);
 	AddTriangleVertex(1, 2, 2);
 	AddTriangleVertex(2, 2, 3);
-	//AddTriangleVertex(4, 5, 0); //
-	//AddTriangleVertex(6, 5, 1); //
-	//AddTriangleVertex(5, 5, 2); //
-	//AddTriangleVertex(4, 5, 0); //
-	//AddTriangleVertex(7, 5, 2); // 
-	//AddTriangleVertex(6, 5, 3); //
+	//AddTriangleVertex(5, 4, 0); //
+	//AddTriangleVertex(4, 4, 1); //
+	//AddTriangleVertex(7, 4, 2); //
+	//AddTriangleVertex(5, 4, 0); //
+	//AddTriangleVertex(7, 4, 2); // 
+	//AddTriangleVertex(6, 4, 3); //
 	AddTriangleVertex(5, 1, 0);
 	AddTriangleVertex(4, 1, 1);
 	AddTriangleVertex(0, 1, 2);
@@ -392,15 +392,17 @@ void CMesh::CreateLeftshoulder()
 void CMesh::Createrightshoulder()
 {
 	
-	AddVertex(glm::vec3(0, 0, 0));//a
-	AddVertex(glm::vec3(10., 0, 0));//b
-	AddVertex(glm::vec3(10, 2, 0));//c
-	AddVertex(glm::vec3(0, 2, 0));//d
-	AddVertex(glm::vec3(0, 0, 4));//a1
-	AddVertex(glm::vec3(10., 0, 4));//b1
-	AddVertex(glm::vec3(10, 2, 4));//c1
-	AddVertex(glm::vec3(0, 2, 4));//d1
+	AddVertex(glm::vec3(0., 2, 7));//e
+	AddVertex(glm::vec3(0, 0, 7));//g
+	AddVertex(glm::vec3(10, 0, 7));//h
+	AddVertex(glm::vec3(10, 2, 7));//f
+	AddVertex(glm::vec3(0., 2, 4));//e1
+	AddVertex(glm::vec3(0, 0, 4));//g1
+	AddVertex(glm::vec3(10, 0, 4));//h1
+	AddVertex(glm::vec3(10, 2, 4));//f1
+	
 
+	
 
 	AddNormal(glm::vec3(1, 0, 0));
 	AddNormal(glm::vec3(-1, 0, 0));
@@ -451,7 +453,6 @@ void CMesh::Createrightshoulder()
 	AddTriangleVertex(5, 1, 0);
 	AddTriangleVertex(0, 1, 2);
 	AddTriangleVertex(1, 1, 3);
-
 
 	
 }
