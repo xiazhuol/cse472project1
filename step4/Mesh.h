@@ -51,7 +51,7 @@ public:
 	void ComputeSmoothNormals(void);
 	void LoadOBJ(const char* filename);
 	void CreateCube();
-	void CreateLetter1();
+	void Createbody();
 	void CreateLetter2();
 	void CreateLetter3();
 };
