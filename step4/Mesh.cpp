@@ -322,42 +322,10 @@ void CMesh::CreateLetter1()
 	AddTriangleVertex(5, 1, 0);
 	AddTriangleVertex(0, 1, 2);
 	AddTriangleVertex(1, 1, 3);
-	/*glEnable(GL_CULL_FACE);
-
-	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-
-
-	glNormal3d(0., 0., 1.);
-
-
-
-	Z_front(); // Front
-
-	glDisable(GL_CULL_FACE);
-
-
-
-	glEnable(GL_TEXTURE_2D);
-
-	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-
-	glNormal3d(1., 0., 0.);
-
-	glNormal3d(-1., 0., 0);
-
-
-
-	z_side(); // side
-	glDisable(GL_TEXTURE_2D);
-
-	glEnable(GL_TEXTURE_2D);
-	glTexEnvf(GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-
-	glNormal3d(0., 0, -1.);
-	z_back(); // back
-	glDisable(GL_TEXTURE_2D);*/
+	
 	
 }
+/*
 void CMesh::CreateLetter2()
 {
 	
@@ -489,4 +457,4 @@ void CMesh::CreateLetter3()
 	AddTriangleVertex(1, 1, 3);
 
 	
-}
+}*/
