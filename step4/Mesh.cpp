@@ -283,12 +283,12 @@ void CMesh::Createbody()
 	AddTexCoord(glm::vec2(1, 1));
 
 
-	/*AddTriangleVertex(1, 5, 0);
-	AddTriangleVertex(0, 5, 1);
-	AddTriangleVertex(3, 5, 2);
-	AddTriangleVertex(1, 5, 0);
-	AddTriangleVertex(3, 5, 2);
-	AddTriangleVertex(2, 5, 3);*/
+	AddTriangleVertex(1, 4, 0);
+	AddTriangleVertex(0, 4, 1);
+	AddTriangleVertex(3, 4, 2);
+	AddTriangleVertex(1, 4, 0);
+	AddTriangleVertex(3, 4, 2);
+	AddTriangleVertex(2, 4, 3);
 	AddTriangleVertex(2, 0, 0);
 	AddTriangleVertex(3, 0, 1);
 	AddTriangleVertex(7, 0, 2);
