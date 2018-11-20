@@ -264,19 +264,17 @@ void CMesh::Createbody()
 	AddVertex(glm::vec3(0, 0, 4));//d1  7
 	
 	
-
 	AddNormal(glm::vec3(1, 0, 0));
 	AddNormal(glm::vec3(-1, 0, 0));
 	AddNormal(glm::vec3(0, 1, 0));
 	AddNormal(glm::vec3(0, -1, 0));
-	AddNormal(glm::vec3(0, 0, -1));
 	AddNormal(glm::vec3(0, 0, 1));
+	AddNormal(glm::vec3(0, 0, -1));
 
 	AddTexCoord(glm::vec2(0, 0));
 	AddTexCoord(glm::vec2(1, 0));
 	AddTexCoord(glm::vec2(0, 1));
 	AddTexCoord(glm::vec2(1, 1));
-
 
 	AddTriangleVertex(1, 4, 0);
 	AddTriangleVertex(0, 4, 1);
@@ -302,12 +300,12 @@ void CMesh::Createbody()
 	AddTriangleVertex(6, 2, 0);
 	AddTriangleVertex(1, 2, 2);
 	AddTriangleVertex(2, 2, 3);
-	//AddTriangleVertex(4, 5, 0); //
-	//AddTriangleVertex(6, 5, 1); //
-	//AddTriangleVertex(5, 5, 2); //
-	//AddTriangleVertex(4, 5, 0); //
-	//AddTriangleVertex(7, 5, 2); // 
-	//AddTriangleVertex(6, 5, 3); //
+	AddTriangleVertex(4, 5, 0);
+	AddTriangleVertex(5, 5, 1);
+	AddTriangleVertex(6, 5, 2);
+	AddTriangleVertex(4, 5, 0);
+	AddTriangleVertex(6, 5, 2);
+	AddTriangleVertex(7, 5, 3);
 	AddTriangleVertex(5, 1, 0);
 	AddTriangleVertex(4, 1, 1);
 	AddTriangleVertex(0, 1, 2);
@@ -333,8 +331,6 @@ void CMesh::CreateLeftshoulder()
 	
 	
 	
-	
-
 	AddNormal(glm::vec3(1, 0, 0));
 	AddNormal(glm::vec3(-1, 0, 0));
 	AddNormal(glm::vec3(0, 1, 0));
@@ -347,13 +343,12 @@ void CMesh::CreateLeftshoulder()
 	AddTexCoord(glm::vec2(0, 1));
 	AddTexCoord(glm::vec2(1, 1));
 
-
-	/*AddTriangleVertex(1, 5, 0);
-	AddTriangleVertex(0, 5, 1);
-	AddTriangleVertex(3, 5, 2);
-	AddTriangleVertex(1, 5, 0);
-	AddTriangleVertex(3, 5, 2);
-	AddTriangleVertex(2, 5, 3);*/
+	AddTriangleVertex(1, 4, 0);
+	AddTriangleVertex(0, 4, 1);
+	AddTriangleVertex(3, 4, 2);
+	AddTriangleVertex(1, 4, 0);
+	AddTriangleVertex(3, 4, 2);
+	AddTriangleVertex(2, 4, 3);
 	AddTriangleVertex(2, 0, 0);
 	AddTriangleVertex(3, 0, 1);
 	AddTriangleVertex(7, 0, 2);
@@ -372,12 +367,12 @@ void CMesh::CreateLeftshoulder()
 	AddTriangleVertex(6, 2, 0);
 	AddTriangleVertex(1, 2, 2);
 	AddTriangleVertex(2, 2, 3);
-	/*AddTriangleVertex(4, 5, 0);
+	AddTriangleVertex(4, 5, 0);
 	AddTriangleVertex(5, 5, 1);
 	AddTriangleVertex(6, 5, 2);
 	AddTriangleVertex(4, 5, 0);
 	AddTriangleVertex(6, 5, 2);
-	AddTriangleVertex(6, 5, 3);*/
+	AddTriangleVertex(7, 5, 3);
 	AddTriangleVertex(5, 1, 0);
 	AddTriangleVertex(4, 1, 1);
 	AddTriangleVertex(0, 1, 2);
