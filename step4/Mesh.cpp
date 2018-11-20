@@ -250,11 +250,7 @@ void CMesh::CreateCube()
 
 void CMesh::Createbody() 
 {
-	AddVertex(glm::vec3(0, 0, 0));//d  3
-	AddVertex(glm::vec3(0, 20, 0));//b //0
-	AddVertex(glm::vec3(5, 20, 0));//a //1
-	AddVertex(glm::vec3(5, 0, 0));//c  //2
-	
+
 	
 	
 	AddVertex(glm::vec3(0, 0, 4));//d1  7
@@ -262,7 +258,12 @@ void CMesh::Createbody()
 	AddVertex(glm::vec3(5, 20, 4));//a1   5
 	
 	AddVertex(glm::vec3(5, 0, 4));//c1  6
-	
+
+	AddVertex(glm::vec3(0, 0, 0));//d  3
+	AddVertex(glm::vec3(0, 20, 0));//b //0
+	AddVertex(glm::vec3(5, 20, 0));//a //1
+	AddVertex(glm::vec3(5, 0, 0));//c  //2
+
 	
 	
 	AddNormal(glm::vec3(1, 0, 0));
