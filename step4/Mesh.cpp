@@ -248,23 +248,20 @@ void CMesh::CreateCube()
 
 
 
-void CMesh::CreateLetter1() 
+void CMesh::Createbody() 
 {
-	AddVertex(glm::vec3(0, 12, 7));//b
-	AddVertex(glm::vec3(0, 14, 7));//a
-	AddVertex(glm::vec3(10, 14, 7));//d
-	AddVertex(glm::vec3(10, 12, 7));//c
+	AddVertex(glm::vec3(0, 20, 0));//b
+	AddVertex(glm::vec3(5, 20, 0));//a
+	AddVertex(glm::vec3(5, 0, 0));//c
+	AddVertex(glm::vec3(0, 0, 0));//d
 	
-	/*AddVertex(glm::vec3(0., 2, 7));//e
-	AddVertex(glm::vec3(10, 2, 7));//f
-	AddVertex(glm::vec3(0, 0, 7));//g
-	AddVertex(glm::vec3(10, 0, 7));//h
-	AddVertex(glm::vec3(8, 12, 7));//i
-	AddVertex(glm::vec3(2, 2, 7));//j*/
-	AddVertex(glm::vec3(0, 12, 4));//b1
-	AddVertex(glm::vec3(0, 14, 4));//a1
-	AddVertex(glm::vec3(10, 14, 4));//d1
-	AddVertex(glm::vec3(10, 12, 4));//c1
+	
+	
+	AddVertex(glm::vec3(0, 20, 4));//b1
+	AddVertex(glm::vec3(5, 20, 4));//a1
+	
+	AddVertex(glm::vec3(5, 0, 4));//c1
+	AddVertex(glm::vec3(0, 0, 4));//d1
 	
 	/*AddVertex(glm::vec3(0., 2, 4));//e1
 	AddVertex(glm::vec3(10, 2, 4));//f1
