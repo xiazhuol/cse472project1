@@ -250,18 +250,18 @@ void CMesh::CreateCube()
 
 void CMesh::Createbody() 
 {
-	AddVertex(glm::vec3(0, 20, 0));//b
-	AddVertex(glm::vec3(5, 20, 0));//a
-	AddVertex(glm::vec3(5, 0, 0));//c
-	AddVertex(glm::vec3(0, 0, 0));//d
-	
-	
-	
-	AddVertex(glm::vec3(0, 20, 4));//b1
-	AddVertex(glm::vec3(5, 20, 4));//a1
-	
-	AddVertex(glm::vec3(5, 0, 4));//c1
 	AddVertex(glm::vec3(0, 0, 4));//d1
+	AddVertex(glm::vec3(5, 0, 4));//c1
+	AddVertex(glm::vec3(5, 20, 4));//a1
+	AddVertex(glm::vec3(0, 20, 4));//b1
+
+	AddVertex(glm::vec3(0, 0, 0));//d
+	AddVertex(glm::vec3(5, 0, 0));//c
+	AddVertex(glm::vec3(5, 20, 0));//a
+	AddVertex(glm::vec3(0, 20, 0));//b
+	
+	
+
 	
 	/*AddVertex(glm::vec3(0., 2, 4));//e1
 	AddVertex(glm::vec3(10, 2, 4));//f1
@@ -322,18 +322,18 @@ void CMesh::Createbody()
 	
 	
 }
-/*
-void CMesh::CreateLetter2()
+
+void CMesh::CreateLeftshoulder()
 {
 	
-	AddVertex(glm::vec3(2, 2, 7));//j
-	AddVertex(glm::vec3(0., 2, 7));//e
-	AddVertex(glm::vec3(8, 12, 7));//i
-	AddVertex(glm::vec3(10, 12, 7));//c
-	AddVertex(glm::vec3(2, 2, 4));//j1
-	AddVertex(glm::vec3(0., 2, 4));//e1
-	AddVertex(glm::vec3(8, 12, 4));//i1
-	AddVertex(glm::vec3(10, 12, 4));//c1
+	AddVertex(glm::vec3(0, 0, 0));//a
+	AddVertex(glm::vec3(10., 0, 0));//b
+	AddVertex(glm::vec3(10, 2, 0));//c
+	AddVertex(glm::vec3(0, 2, 0));//d
+	AddVertex(glm::vec3(0, 0, 4));//a1
+	AddVertex(glm::vec3(10., 0, 4));//b1
+	AddVertex(glm::vec3(10, 2, 4));//c1
+	AddVertex(glm::vec3(0, 2, 4));//d1
 	
 
 	AddNormal(glm::vec3(1, 0, 0));
@@ -388,6 +388,7 @@ void CMesh::CreateLetter2()
 
 
 }
+/*
 void CMesh::CreateLetter3()
 {
 	
