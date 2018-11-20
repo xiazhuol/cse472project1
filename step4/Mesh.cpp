@@ -392,17 +392,15 @@ void CMesh::CreateLeftshoulder()
 void CMesh::Createrightshoulder()
 {
 	
-	AddVertex(glm::vec3(0., 2, 7));//e
-	AddVertex(glm::vec3(0, 0, 7));//g
-	AddVertex(glm::vec3(10, 0, 7));//h
-	AddVertex(glm::vec3(10, 2, 7));//f
-	AddVertex(glm::vec3(0., 2, 4));//e1
-	AddVertex(glm::vec3(0, 0, 4));//g1
-	AddVertex(glm::vec3(10, 0, 4));//h1
-	AddVertex(glm::vec3(10, 2, 4));//f1
-	
+	AddVertex(glm::vec3(0, 0, 0));//a
+	AddVertex(glm::vec3(10., 0, 0));//b
+	AddVertex(glm::vec3(10, 2, 0));//c
+	AddVertex(glm::vec3(0, 2, 0));//d
+	AddVertex(glm::vec3(0, 0, 4));//a1
+	AddVertex(glm::vec3(10., 0, 4));//b1
+	AddVertex(glm::vec3(10, 2, 4));//c1
+	AddVertex(glm::vec3(0, 2, 4));//d1
 
-	
 
 	AddNormal(glm::vec3(1, 0, 0));
 	AddNormal(glm::vec3(-1, 0, 0));
@@ -453,6 +451,7 @@ void CMesh::Createrightshoulder()
 	AddTriangleVertex(5, 1, 0);
 	AddTriangleVertex(0, 1, 2);
 	AddTriangleVertex(1, 1, 3);
+
 
 	
 }
