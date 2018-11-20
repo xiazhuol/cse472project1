@@ -53,5 +53,5 @@ public:
 	void CreateCube();
 	void Createbody();
 	void CreateLeftshoulder();
-	void CreateLetter3();
+	void Createrightshoulder();
 };
