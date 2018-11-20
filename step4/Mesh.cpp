@@ -501,24 +501,10 @@ void CMesh::CreateCube()
 void CMesh::Createbody()
 
 {
-
 /// Updated upstream
-	
-	
-///
-	AddVertex(glm::vec3(0, 0, 0));//d  3
 
-	AddVertex(glm::vec3(0, 20, 0));//b //0
-
-	AddVertex(glm::vec3(5, 20, 0));//a //1
-
-	AddVertex(glm::vec3(5, 0, 0));//c  //2
-
-
-
-
-
-
+//DO NOT CHANGE THE SEQUENCE AGAIN
+//THIS IS THE CORRECT WAY TO TEXTURE THAT 
 
 //// Stashed changes
 	AddVertex(glm::vec3(0, 0, 4));//d1  7
@@ -526,8 +512,6 @@ void CMesh::Createbody()
 	AddVertex(glm::vec3(0, 20, 4));//b1  4
 
 	AddVertex(glm::vec3(5, 20, 4));//a1   5
-
-
 
 	AddVertex(glm::vec3(5, 0, 4));//c1  6
 
