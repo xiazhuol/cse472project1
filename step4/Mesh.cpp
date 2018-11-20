@@ -388,8 +388,8 @@ void CMesh::CreateLeftshoulder()
 
 
 }
-/*
-void CMesh::CreateLetter3()
+
+void CMesh::Createrightshoulder()
 {
 	
 	AddVertex(glm::vec3(0., 2, 7));//e
@@ -455,4 +455,4 @@ void CMesh::CreateLetter3()
 	AddTriangleVertex(1, 1, 3);
 
 	
-}*/
+}
