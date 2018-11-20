@@ -52,6 +52,6 @@ public:
 	void LoadOBJ(const char* filename);
 	void CreateCube();
 	void Createbody();
-	void CreateLetter2();
+	void CreateLeftshoulder();
 	void CreateLetter3();
 };
