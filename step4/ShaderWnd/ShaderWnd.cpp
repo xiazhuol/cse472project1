@@ -385,9 +385,9 @@ void CShaderWnd::ResetMatrix()
 
 void CShaderWnd::UpdateMatrix()
 {
-	mat4 mTranslate = translate(mat4(1.f), m_vCenter);
+	mat4 mTranslate = translate(mat4(1.f), m_vCenter) * rotate(mat4(1.f), m_spinAngle, vec3(0, 1., 0.));
 	m_mProjection = perspective<float>(m_fFoV, m_nXRes/(float)m_nYRes, m_fNear, m_fFar);
-	m_mView = lookAt(m_vEye, m_vLookat, m_vUp)* rotate(mat4(1.f), m_cameraAngle, vec3(0, 1., 0.));
+	m_mView = lookAt(m_vEye, m_vLookat, m_vUp);
 
 	m_mPVM = m_mProjection * m_mView * mTranslate * m_mRotation * m_mModel;
 	m_mVM = m_mView * mTranslate * m_mRotation * m_mModel;
@@ -540,4 +540,16 @@ void CShaderWnd::OnRButtonUp(UINT nFlags, CPoint point)
 	HandleButtons(point.x,point.y);
 	CWnd::OnRButtonUp(nFlags, point);
 	UpdateMatrix();
+}
+void CShaderWnd::setSpinAngle(float a) {
+	m_spinAngle = a;
+}
+void CShaderWnd::setSpinTimer(UINT_PTR t) {
+	m_spinTimer = t;
+}
+UINT_PTR CShaderWnd::getSpinTimer() {
+	return m_spinTimer;
+}
+float CShaderWnd::getSpinAngle() {
+	return m_spinAngle;
 }

@@ -99,6 +99,16 @@ public:
 	void Motion(vec3& vVec);
 	void UpdateMatrix();
 	void ResetMatrix();
+
+	void setSpinAngle(float a);
+	void setSpinTimer(UINT_PTR t);
+	UINT_PTR getSpinTimer();
+	float getSpinAngle();
+
+protected:
+	float  m_spinAngle;
+	UINT_PTR m_spinTimer;
+
 };
 
 /////////////////////////////////////////////////////////////////////////////
