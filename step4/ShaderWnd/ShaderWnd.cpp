@@ -387,7 +387,7 @@ void CShaderWnd::UpdateMatrix()
 {
 	mat4 mTranslate = translate(mat4(1.f), m_vCenter);
 	m_mProjection = perspective<float>(m_fFoV, m_nXRes/(float)m_nYRes, m_fNear, m_fFar);
-	m_mView = lookAt(m_vEye, m_vLookat, m_vUp);
+	m_mView = lookAt(m_vEye, m_vLookat, m_vUp)* rotate(mat4(1.f), m_cameraAngle, vec3(0, 1., 0.));
 
 	m_mPVM = m_mProjection * m_mView * mTranslate * m_mRotation * m_mModel;
 	m_mVM = m_mView * mTranslate * m_mRotation * m_mModel;

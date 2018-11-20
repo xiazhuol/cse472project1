@@ -184,8 +184,10 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="ChildView.h" />
+    <ClInclude Include="graphics\GrCamera.h" />
     <ClInclude Include="graphics\GrCubeTexture.h" />
     <ClInclude Include="graphics\GrTexture.h" />
+    <ClInclude Include="graphics\GrVector.h" />
     <ClInclude Include="MainFrm.h" />
     <ClInclude Include="Mesh.h" />
     <ClInclude Include="Resource.h" />
@@ -198,6 +200,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ChildView.cpp" />
+    <ClCompile Include="graphics\GrCamera.cpp" />
     <ClCompile Include="graphics\GrCubeTexture.cpp" />
     <ClCompile Include="graphics\GrTexture.cpp" />
     <ClCompile Include="MainFrm.cpp" />

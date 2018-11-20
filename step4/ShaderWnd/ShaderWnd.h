@@ -82,7 +82,7 @@ public:
 	vec3 m_vLookat;
 	vec3 m_vUp;
 	float m_fNear, m_fFar, m_fFoV;
-
+	float m_cameraAngle;
 	int m_nXRes;
 	int m_nYRes;
 	bool m_bLButtonDown;
