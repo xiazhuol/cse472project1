@@ -18,7 +18,7 @@ void main()
    float Shininess = 100.;
 
    AmbientProduct = vec4(0.2, 0.2, 0.2, 1.);
-   DiffuseProduct = vec4(0.8, 0.2, 0, 0.);
+   DiffuseProduct = vec4(0.3, 0.5,0.8, 0.);
    SpecularProduct = vec4(.2, .2, .2, 1.);
 
    vec3 N = normalize( 2.*texture2D(bump_map, texCoord).xyz-1.0);
