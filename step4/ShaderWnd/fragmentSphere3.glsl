@@ -15,11 +15,11 @@ void main()
 {
    vec4 AmbientProduct, DiffuseProduct, SpecularProduct;
    vec4 LightPosition;
-   float Shininess = 100.;
+   float Shininess=100;
 
-   AmbientProduct = vec4(0.2, 0.2, 0.2, 1.);
-   DiffuseProduct = vec4(1., 0.2, 0., 0.);
-   SpecularProduct = vec4(.2, .2, .2, 1.);
+   //AmbientProduct = vec4(0.2, 0.2, 0.2, 1.);
+  // DiffuseProduct = vec4(1., 1., 1., 0.);
+   //SpecularProduct = vec4(.2, .2, .2, 1.);
 
    vec3 N = normalize( 2.*texture2D(bump_map, texCoord).xyz-1.0);
    vec3 E = normalize (fE);
@@ -29,13 +29,13 @@ void main()
 
 	// Compute terms in the illumination equation
     vec4 ambient = AmbientProduct;
-    float Kd = max( 0.0,dot(L, N));
+    float Kd = max(dot(L, N), 0.0);
     vec4  diffuse = Kd*DiffuseProduct;
     float Ks = pow(max(dot(N, H), 0.0), Shininess);
     vec4  specular = Ks * SpecularProduct;
     if(dot(L, N) < 0.0) 
         specular = vec4(0.0, 0.0, 0.0, 1.0);
 
-    fColor = clamp(ambient + diffuse + specular, 0., 1.);
+    fColor = ambient + diffuse + specular;
     fColor.a = DiffuseProduct.a;
 }
